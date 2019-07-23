@@ -6,8 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link rel="stylesheet" href="/css/main.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+    <style>
+      @media only screen and (min-width: 960px){
+        .container{
+          width: 960px;
+        }
+      }
+      @media only screen and (max-width: 960px){
+        .container{
+          width: 600px;
+        }
+      }
+      }
+      @media only screen and (min-width: 600px){
+        .container{
+          width: 100%;
+        }
+      }
+      }
+    </style>
   </head>
-  <body>
+  <body style = "background: black;">
 <!-- ====================== start of html email ======================== -->
     <table width = "100%" 
            border = "0" 
@@ -37,7 +56,7 @@
                                 background: -moz-linear-gradient(left, rgba(101,255,253,1) 0%, rgba(34,150,238,1) 100%); /* FF3.6-15 */
                                 background: -webkit-linear-gradient(left, rgba(101,255,253,1) 0%,rgba(34,150,238,1) 100%); /* Chrome10-25,Safari5.1-6 */
                                 background: linear-gradient(to right, rgba(101,255,253,1) 0%,rgba(34,150,238,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-                                padding: 35px 15px 70px 15px;">
+                                padding: 23px 15px 104px 15px;">
                   <tr>
                     <td style = "font-family: 'Open Sans', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
                                 color: white;">
@@ -89,7 +108,7 @@
                     <td style = "font-family: 'Open Sans', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
                                   color: #7d7d7d;
                                   padding: 20px;">
-                      <table class = "container" 
+                      <table class = "menuTable" 
                               width = "100%" 
                               align = "center"
                               cellspacing = "0"
@@ -129,7 +148,7 @@
 
             <!-- start of lets you row -->
             <tr>
-              <td style = "background: #fafafa">
+              <td class = "letsYouRow" style = "background: #fafafa">
                 <h3 style = "font-family: 'Open Sans', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
                               color: #333333;
                               padding:  1.5em 0;
@@ -137,7 +156,7 @@
                               font-size: 1.5em;
                               text-align: center;">Hero let's you...</h3>
                 <!-- start of left column -->
-                <table class = "headerLeft" 
+                <table class = "leftColumn" 
                         width = "33.3%" 
                         align = "left"
                         cellspacing = "0"
@@ -193,7 +212,7 @@
                 </table>
                 <!-- end of left column -->
                 <!-- start of middle column -->
-                <table class = "headerLeft" 
+                <table class = "middleColumn" 
                         width = "33.3%" 
                         align = "left"
                         cellspacing = "0"
@@ -249,7 +268,7 @@
                 </table>
                 <!-- end of middle column -->
                 <!-- start of right column -->
-                <table class = "headerLeft" 
+                <table class = "rightColumn" 
                       width = "33.3%" 
                       align = "left"
                       cellspacing = "0"
@@ -310,7 +329,8 @@
 
             <!-- start of advanced row -->
             <tr>
-              <td style = "text-align: center;
+              <td class = "advancedTable"
+                  style = "text-align: center;
                             padding: 3em 2em;
                             background: white;">
                 <!-- start header -->
@@ -326,12 +346,13 @@
                 <!-- end header -->
                 
                 <!-- start left column -->
-                <table width = "50%" 
-                        align = "left"
-                        cellspacing = "0"
-                        cellpadding = "0"
-                        border = "0"
-                        style = "width: 50%;
+                <table class = "leftColumn"
+                       width = "50%" 
+                       align = "left"
+                       cellspacing = "0"
+                       cellpadding = "0"
+                       border = "0"
+                       style = "width: 50%;
                                 text-align: left;
                                 font-family: 'Open Sans', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
                                 color: #7f8887;
